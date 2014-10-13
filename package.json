@@ -1,0 +1,63 @@
+{
+  "name": "require-clean",
+  "description": "Cleanly `require` a module from disk, having flushed the module's cache, including all of its submodules. Used like normal `require`",
+  "version": "0.1.0",
+  "homepage": "http://github.com/anodynos/require-clean/",
+  "author": {
+    "name": "Agelos Pikoulas",
+    "email": "agelos.pikoulas@gmail.com"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/mit-license.php"
+    }
+  ],
+  "keywords": [
+    "require",
+    "cache",
+    "clean",
+    "clear",
+    "fresh",
+    "uncached",
+    "uncache",
+    "nocache",
+    "modules"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/anodynos/require-clean"
+  },
+  "bugs": {
+    "url": "http://github.com/anodynos/require-clean/issues",
+    "email": "agelos.pikoulas@gmail.com"
+  },
+  "main": "./build/code/requireClean.js",
+  "preferGlobal": false,
+  "scripts": {
+    "test": "grunt"
+  },
+  "directories": {
+    "doc": "./doc",
+    "dist": "./build"
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "dependencies": {
+    "caller-path": "^0.1.0",
+    "lodash": "*",
+    "resolve-from": "^1.0.0"
+  },
+  "devDependencies": {
+    "chai": "*",
+    "coffee-script": "*",
+    "mocha": "*",
+    "grunt": "0.4.x",
+    "grunt-contrib-clean": "0.4.x",
+    "grunt-contrib-concat": "0.1.x",
+    "grunt-shell": "~0.3.x",
+    "grunt-contrib-watch": "~0.5.x",
+    "uberscore": "0.0.16"
+  }
+}
