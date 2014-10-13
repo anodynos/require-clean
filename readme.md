@@ -1,4 +1,4 @@
-# require-clean v0.1.0
+# require-clean v0.1.1
 
 [![Build Status](https://travis-ci.org/anodynos/require-clean.svg?branch=master)](https://travis-ci.org/anodynos/require-clean)
 [![Up to date Status](https://david-dm.org/anodynos/require-clean.png)](https://david-dm.org/anodynos/require-clean.png)
@@ -23,6 +23,8 @@ var requireClean = require('require-clean');
 
 and then
 
+## Clean module + submodules cache
+
 ```
 var someMod = requireClean('../path/to/someMod');
 ```
@@ -33,6 +35,8 @@ or
 requireClean.clean('../path/to/someMod');     // flush the cache for module + all submodules
 var someMod = require('../path/to/someMod');  // normal require (but freshly read module + submodules)
 ```
+
+## Clean module cache only, not submodules
 
 If you want to delete ONLY the module and not its submodules, use :
 
@@ -45,6 +49,12 @@ or
 ```
 requireClean.clean('../path/to/someMod', false);     // flush the cache for module ONLY
 var someMod = require('../path/to/someMod');  // normal require (but freshly read module)
+```
+
+## Clean the whole nodejs modules cache
+
+```
+requireClean.clean()
 ```
 
 # License

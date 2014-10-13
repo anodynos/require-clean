@@ -24,14 +24,13 @@ requireClean = (name, deep=true)->
   searchCache name, cp, deep, deleteMod # cant "clean name, deep" cause of callerPath()
   require resolveFrom path.dirname(cp), name
 
-clean = (name, deep=true)->
-  if _.isUndefined name
+requireClean.clean = (name, deep=true)->
+  console.log deep
+  if _.isUndefined name # clean all
     _.each require.cache, (v, key)-> delete require.cache[key]
   else
     throw new TypeError('requireClean.clean Expects a moduleId String') if not _.isString name
     searchCache name, callerPath(), deep, deleteMod
-
-requireClean.clean = clean
 
 requireClean.VERSION = if VERSION? then VERSION else '{NO_VERSION}' # 'VERSION' variable is added by grant:concat
 

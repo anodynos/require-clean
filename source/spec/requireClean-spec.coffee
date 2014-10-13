@@ -1,11 +1,7 @@
-_ = (_B = require 'uberscore')._
-l = new _B.Logger "requireClean", 1
+_ = require 'lodash'
 
 chai = require 'chai'
 expect = chai.expect
-
-
-#describe = ->
 
 { equal, notEqual, ok, notOk, tru, fals, deepEqual, notDeepEqual, exact, notExact, iqual, notIqual
   ixact, notIxact, like, notLike, likeBA, notLikeBA, equalSet, notEqualSet } = require './specHelpers'
@@ -70,6 +66,3 @@ describe 'cleanAll & plain `require` again', ->
     equal a(), 11
     equal a(), 22
     equal a(), 33
-
-
-

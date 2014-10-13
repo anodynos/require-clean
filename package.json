@@ -1,7 +1,7 @@
 {
   "name": "require-clean",
   "description": "Cleanly `require` a module from disk, having flushed the module's cache, including all of its submodules. Used like normal `require`",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "http://github.com/anodynos/require-clean/",
   "author": {
     "name": "Agelos Pikoulas",
