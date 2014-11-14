@@ -3,10 +3,9 @@ _ = require 'lodash'
 chai = require 'chai'
 expect = chai.expect
 
-{ equal, notEqual, ok, notOk, tru, fals, deepEqual, notDeepEqual, exact, notExact, iqual, notIqual
-  ixact, notIxact, like, notLike, likeBA, notLikeBA, equalSet, notEqualSet } = require './specHelpers'
+{ equal } = require './specHelpers'
 
-requireClean = require '../code/requireClean'
+requireClean = require 'require-clean' # package name or `require '../code/requireClean'` - works the same
 
 describe 'plain `require`', ->
 

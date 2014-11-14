@@ -61,7 +61,7 @@ requireClean.clean()
 
 The MIT License
 
-Copyright (c) 2013-2014 Agelos Pikoulas (agelos.pikoulas@gmail.com)
+Copyright (c) 2014 Agelos Pikoulas (agelos.pikoulas@gmail.com)
 
 Permission is hereby granted, free of charge, to any person
 obtaining a copy of this software and associated documentation
