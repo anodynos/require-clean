@@ -25,7 +25,6 @@ requireClean = (name, deep=true)->
   require resolveFrom path.dirname(cp), name
 
 requireClean.clean = (name, deep=true)->
-  console.log deep
   if _.isUndefined name # clean all
     _.each require.cache, (v, key)-> delete require.cache[key]
   else
