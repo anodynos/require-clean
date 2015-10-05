@@ -1,4 +1,4 @@
-# require-clean v0.1.1
+# require-clean v0.1.2
 
 [![Build Status](https://travis-ci.org/anodynos/require-clean.svg?branch=master)](https://travis-ci.org/anodynos/require-clean)
 [![Up to date Status](https://david-dm.org/anodynos/require-clean.png)](https://david-dm.org/anodynos/require-clean.png)
