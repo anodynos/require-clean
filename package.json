@@ -1,18 +1,13 @@
 {
   "name": "require-clean",
   "description": "Cleanly `require` a module from disk, having flushed the module's cache, including all of its submodules. Used like normal `require`",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "homepage": "http://github.com/anodynos/require-clean/",
   "author": {
     "name": "Agelos Pikoulas",
     "email": "agelos.pikoulas@gmail.com"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "http://www.opensource.org/licenses/mit-license.php"
-    }
-  ],
+  "license": "MIT",
   "keywords": [
     "require",
     "cache",
@@ -42,22 +37,22 @@
     "dist": "./build"
   },
   "engines": {
-    "node": "0.10.x"
+    "node": ">=0.10.x"    
   },
   "dependencies": {
     "caller-path": "^0.1.0",
-    "lodash": "*",
+    "lodash": "3.x",
     "resolve-from": "^1.0.0"
   },
   "devDependencies": {
-    "chai": "*",
-    "mocha": "*",
-    "grunt": "0.4.x",
+    "mocha": "2.0.x",
+    "chai": "1.9.2",
+    "grunt": "~0.4.5",
     "grunt-contrib-watch": "~0.5.x",
-    "grunt-urequire": "0.7.x",
-    "urequire": ">=0.7.x",
+    "grunt-urequire": "~0.7.2",
+    "urequire": ">=0.7.0-beta.21",
     "uberscore": "0.0.16",
-    "urequire-ab-specrunner": "^0.1.7",
-    "urequire-rc-inject-version": "^0.1.2"
+    "urequire-ab-specrunner": "~0.2.1",
+    "urequire-rc-inject-version": "~0.1.5"
   }
 }
