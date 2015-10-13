@@ -7,7 +7,9 @@ callerPath = require 'caller-path'
 # Require a nodejs module, having first flashed its cache and by default its submodule's cache
 # Inspired by http://stackoverflow.com/questions/9210542/node-js-require-cache-possible-to-invalidate
 
-deleteMod = (mod)-> delete require.cache[mod.id]
+deleteMod = (mod)-> 
+  if !mod.id.match(/.*\.node$/)
+    delete require.cache[mod.id]
 
 searchCache = (name, calledFrom, deep, callback)->
   mod = resolveFrom path.dirname(calledFrom), name
