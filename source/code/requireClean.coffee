@@ -7,7 +7,7 @@ callerPath = require 'caller-path'
 # Require a nodejs module, having first flashed its cache and by default its submodule's cache
 # Inspired by http://stackoverflow.com/questions/9210542/node-js-require-cache-possible-to-invalidate
 
-deleteMod = (mod)-> 
+deleteMod = (mod)->
   if !mod.id.match(/.*\.node$/)
     delete require.cache[mod.id]
 
@@ -36,3 +36,4 @@ requireClean.clean = (name, deep=true)->
 requireClean.VERSION = if VERSION? then VERSION else '{NO_VERSION}' # 'VERSION' variable is added by grant:concat
 
 module.exports = requireClean
+
