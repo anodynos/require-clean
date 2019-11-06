@@ -41,7 +41,7 @@
   },
   "dependencies": {
     "caller-path": "^0.1.0",
-    "lodash": "3.x",
+    "lodash": "4.x",
     "resolve-from": "^1.0.0"
   },
   "devDependencies": {
